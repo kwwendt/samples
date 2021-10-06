@@ -33,7 +33,7 @@
         "x-amazon-apigateway-integration" : {
           "type" : "aws_proxy",
           "httpMethod" : "POST",
-          "uri" : "arn:aws:apigateway:<region>:lambda:path/2015-03-31/functions/arn:aws:lambda:<region>:<aws-account-id>:function:apigw-integration/invocations",
+          "uri" : "arn:aws:apigateway:<region>:lambda:path/2015-03-31/functions/arn:aws:lambda:<region>:<aws-account-id>:function:<function-name>/invocations",
           "responses" : {
             "default" : {
               "statusCode" : "200"
